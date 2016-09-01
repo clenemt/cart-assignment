@@ -12,7 +12,7 @@ var Cart = (function ($, Dialog) { // eslint-disable-line
                 <div class="cart-close"><span class="close"></div>
                 <div class="cart-quantity">
                     <label for="quantity-${item.id}">Quantity:</label>
-                    <input class="form-control" type="number" value="${item.quantity}" name="quantity-${item.id}" id="quantity-${item.id}">
+                    <input class="form-control" type="number" min="1" max="10" value="${item.quantity}" name="quantity-${item.id}" id="quantity-${item.id}">
                 </div>
             </div>
             <h4 class="cart-title">${item.name}</h4>

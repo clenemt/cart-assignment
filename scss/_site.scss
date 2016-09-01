@@ -239,13 +239,37 @@
   text-align: center;
 }
 
+.picker-image {
+  width: 100%;
+}
+
+.picker-desc {
+  padding: $spacer0;
+
+  .picker-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-size: 90%;
+    white-space: inherit;
+    color: $gray;
+  }
+
+  p {
+    font-size: 13px;
+    color: $gray-light;
+  }
+}
+
 .picker-card {
-  height: 300px;
-  width: 190px;
+  height: 290px;
+  width: 160px;
   margin: 0 $spacer0 $spacer0 0;
   cursor: pointer;
   border-radius: $border-radius;
   border: 1px solid #e6e6e6;
+  white-space: normal;
+  overflow: hidden;
 
   &:hover {
     border-color: $green;

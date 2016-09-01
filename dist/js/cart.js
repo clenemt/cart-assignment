@@ -9,7 +9,7 @@ var Cart = function ($, Dialog) {
         items = [];
 
     function buildItem(item) {
-        return $.create('<div id="' + item.id + '" class="cart-item">\n            <img class="cart-img" src="img/preview.png">\n            <div class="cart-actions">\n                <div class="cart-close"><span class="close"></div>\n                <div class="cart-quantity">\n                    <label for="quantity-' + item.id + '">Quantity:</label>\n                    <input class="form-control" type="number" value="' + item.quantity + '" name="quantity-' + item.id + '" id="quantity-' + item.id + '">\n                </div>\n            </div>\n            <h4 class="cart-title">' + item.name + '</h4>\n            <span class="cart-dim">' + item.dim + '</span>\n        </div>');
+        return $.create('<div id="' + item.id + '" class="cart-item">\n            <img class="cart-img" src="img/preview.png">\n            <div class="cart-actions">\n                <div class="cart-close"><span class="close"></div>\n                <div class="cart-quantity">\n                    <label for="quantity-' + item.id + '">Quantity:</label>\n                    <input class="form-control" type="number" min="1" max="10" value="' + item.quantity + '" name="quantity-' + item.id + '" id="quantity-' + item.id + '">\n                </div>\n            </div>\n            <h4 class="cart-title">' + item.name + '</h4>\n            <span class="cart-dim">' + item.dim + '</span>\n        </div>');
     }
 
     var exports = {
