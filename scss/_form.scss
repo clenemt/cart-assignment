@@ -14,8 +14,8 @@
 
   &:focus {
     background-color: #fff;
-    border-color: $gray-light;
     outline: none;
+    border-color: $green;
   }
 
   // Unstyle the caret on `<select>`s in IE10+.
