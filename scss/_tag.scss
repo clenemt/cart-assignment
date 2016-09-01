@@ -1,0 +1,13 @@
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10em;
+  background: darken($red-dark, 8%);
+  margin-left: $spacer0;
+
+  &:empty { display: none; }
+}

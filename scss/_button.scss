@@ -78,6 +78,7 @@
   }
 
   &:active,
+  &.active,
   &:focus {
     background-color: darken($red-dark, 8%);
     border-color: darken($red-dark, 8%);
@@ -95,28 +96,9 @@
   }
 
   &:active,
+  &.active,
   &:focus {
     background-color: darken($gray-lighter, 8%);
     border-color: darken($gray-lighter, 16%);
-  }
-}
-
-.btn-outline-primary {
-  color: $red;
-  background-image: none;
-  background-color: transparent;
-  border-color: $red;
-
-  &:hover,
-  &:active {
-    color: #fff;
-    background-color: $red;
-    border-color: $red;
-  }
-
-  &:hover:active {
-    color: #fff;
-    background-color: $red-dark;
-    border-color: $red-dark;
   }
 }

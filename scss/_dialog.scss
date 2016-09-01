@@ -1,0 +1,63 @@
+.dialog-open { overflow: hidden; }
+.dialog-open .dialog {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zi-dialog-overlay;
+  background-color: #000;
+
+  &.fade    { opacity: 0; }
+  &.fade.in { opacity: .3; }
+}
+
+.dialog {
+  position: fixed;
+  z-index: $zi-dialog;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  outline: 0;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  &.fade .dialog-wrapper {
+    transition: transform .3s ease-out;
+    transform: translate(0, -25%);
+  }
+
+  &.in .dialog-wrapper {
+    transform: translate(0, 0);
+  }
+}
+
+.dialog-wrapper {
+  position: relative;
+  width: auto;
+  margin: $spacer0;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: $border-width solid rgba(0, 0, 0, .2);
+  border-radius: $border-radius-lg;
+  outline: 0;
+  margin: 10rem auto;
+}
+
+.dialog-inner {
+  position: relative;
+  padding: $spacer;
+  text-align: center;
+}
+
+@include mq-up(sm) {
+  .dialog-wrapper {
+    width: 350px;
+  }
+}

@@ -51,7 +51,7 @@
 
   .btn {
     margin-top: -4px;
-    margin-left: 1rem;
+    margin-left: $spacer;
   }
 }
 
@@ -100,7 +100,7 @@
 }
 
 .content-header {
-  padding-top: 1rem;
+  padding-top: $spacer;
 }
 
 .block {
@@ -125,6 +125,11 @@
   }
 }
 
+/* CART ITEMS ------------------ */
+.cart-body {
+  background: #fff;
+}
+
 .cart-units {
   float: right;
 
@@ -133,6 +138,69 @@
   }
 }
 
+.cart-item {
+  padding: $spacer;
+  border-bottom: $border-width solid $gray-lightest;
+  @include clearfix();
+}
+
+.cart-dim {
+  color: $gray-light;
+}
+
+.cart-img {
+  width: 80px;
+  border-radius: $border-radius;
+  float: left;
+  margin-right: $spacer;
+}
+
+.cart-title {
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.cart-actions {
+  float: right;
+}
+
+.cart-quantity {
+
+  label {
+    color: $gray-light;
+  }
+
+  input {
+    display: inline-block;
+    width: 5rem;
+    margin-left: $spacer0;
+  }
+}
+
+.cart-close {
+  text-align: right;
+  color: $gray-light;
+  margin-top: -$spacer0;
+  margin-bottom: $spacer0;
+
+  .close {
+    padding: $spacer0;
+    margin-right: -$spacer0;
+    color: $gray-lighter;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: $gray-light;
+  }
+
+  .close::after {
+    content: '×';
+    font-size: 1.5rem;
+  }
+}
+
+/* CART FORM ------------------ */
 .cart-upload {
   display: block;
   margin: 0;
@@ -162,7 +230,7 @@
 .picker-wrapper {
   overflow-x: scroll;
   background: #fff;
-  padding: 1.5rem 2rem 1rem;
+  padding: $spacer1 $spacer2 $spacer;
   white-space: nowrap;
 }
 
@@ -230,12 +298,12 @@
   .header {
     font-weight: bold;
     font-size: $fs;
-    margin-bottom: 1rem;
+    margin-bottom: $spacer;
   }
 }
 
 .footer-nav {
-  padding: 2rem 0 2.5rem 0;
+  padding: $spacer2 0 $spacer3 0;
   @include clearfix();
 }
 

@@ -28,7 +28,7 @@
         <ul class="nav nav-main">
           <li>
             <a class="logo" href="#">
-              <image src="img/logo.png" alt="logo">
+              <img src="img/logo.png" alt="logo">
             </a>
           </li><li class="dropdown">
             <a class="dropdown-toggle" href="#">3D Print</a>
@@ -57,7 +57,7 @@
           </li><li>
             <a href="#">Log in</a>
           </li>
-          <button class="btn btn-primary">3D Print<span class="tag tag-pill hidden"></span></button>
+          <button class="btn btn-primary">3D Print<span class="tag"></span></button>
           </li>
         </ul>
 
@@ -75,7 +75,7 @@
           <div class="cart-units">
             Switch units
             <div class="btn-group">
-              <button class="btn btn-secondary">mm</button>
+              <button class="btn btn-secondary active">mm</button>
               <button class="btn btn-secondary">cm</button>
               <button class="btn btn-secondary">in</button>
             </div>
@@ -84,9 +84,9 @@
         <div class="cart-body">
         </div>
         <div class="cart-footer">
-          <form>
-            <input id="fileupload" multiple="multiple" type="file" name="fileupload" class="form-hidden" tabindex="-1">
-            <label class="cart-upload" for="fileupload">
+          <form id="file-upload">
+            <input id="upload" multiple="multiple" type="file" name="upload" class="form-hidden" tabindex="-1">
+            <label class="cart-upload" for="upload">
               Browse for a 3D file
             </label>
           </form>
@@ -144,7 +144,7 @@
           <button class="btn btn-secondary search-filter">More filters</button>
         </div>
         <div class="search-wrapper">
-          <input class="form-control" type="search">
+          <input class="form-control" type="search" value="Paris, France">
         </div>
       </div><!-- .search-hub -->
 
@@ -223,7 +223,11 @@
   </div>
 
   <!-- Script files -->
-  <script src="lib/foo.js"></script>
+  <script src="dist/js/helper.js"></script>
+  <script src="dist/js/dialog.js"></script>
+  <script src="dist/js/fancy.js"></script>
+  <script src="dist/js/cart.js"></script>
+  <script src="dist/js/upload.js"></script>
   <script src="dist/js/app.js"></script>
 
 </body>
