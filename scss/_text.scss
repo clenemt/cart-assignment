@@ -11,8 +11,8 @@ h1 { font-size: $fs-h1; }
 
 h2 {
   font-size: $fs-h2;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -56,7 +56,8 @@ ul ol {
   margin-bottom: 0;
 }
 
-a {
+a,
+.link {
   color: $link-color;
   text-decoration: $link-decoration;
 

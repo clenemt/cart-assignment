@@ -17,11 +17,192 @@
 
   <!-- CSS files -->
   <link rel="stylesheet" href="dist/css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
 </head>
 <body>
 
   <div class="site">
+
+    <div class="navbar">
+      <div class="container">
+
+        <ul class="nav nav-main">
+          <li>
+            <a class="logo" href="#">
+              <image src="img/logo.png" alt="logo">
+            </a>
+          </li><li class="dropdown">
+            <a class="dropdown-toggle" href="#">3D Print</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#">Start a 3D Print</a>
+              </li><li>
+                <a href="#">Materials</a>
+              </li><li>
+                <a href="#">Student discount</a>
+              </li>
+            </ul>
+          </li><li class="dropdown">
+            <a class="dropdown-toggle" href="#">Learn</a><ul class="dropdown-menu">
+              <li><a href="#">How 3D Hubs works</a></li>
+              <li><a href="#">How 3D Printing works</a></li>
+              <li><a href="#">Talk forum</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="nav nav-user">
+          <li>
+            <a href="#">Sign Up</a>
+          </li><li>
+            <a href="#">Log in</a>
+          </li>
+          <button class="btn btn-primary">3D Print<span class="tag tag-pill hidden"></span></button>
+          </li>
+        </ul>
+
+      </div>
+    </div><!-- .navbar -->
+
+    <div class="content container">
+      <div class="content-header">
+        <h2>1. Upload files for instant prices</h2>
+      </div>
+
+      <div class="block cart">
+        <div class="cart-header">
+          <h4>File uploader</h4>
+          <div class="cart-units">
+            Switch units
+            <div class="btn-group">
+              <button class="btn btn-secondary">mm</button>
+              <button class="btn btn-secondary">cm</button>
+              <button class="btn btn-secondary">in</button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-body">
+        </div>
+        <div class="cart-footer">
+          <form>
+            <input id="fileupload" multiple="multiple" type="file" name="fileupload" class="form-hidden" tabindex="-1">
+            <label class="cart-upload" for="fileupload">
+              Browse for a 3D file
+            </label>
+          </form>
+        </div>
+      </div><!-- .cart -->
+
+      <div class="content-header">
+        <h2>2. Choose a material to print in</h2>
+      </div>
+
+      <div class="block picker">
+        <div class="picker-wrapper">
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="picker-item">
+            <div class="picker-card"></div>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div><!-- .picker -->
+
+      <div class="content-header">
+        <h2>3. Select a 3D printing Hub</h2>
+      </div>
+
+      <div class="block search-hub">
+      </div><!-- .search-hub -->
+
+    </div><!-- .content -->
+
+    <div class="footer">
+      <div class="container grid">
+        <div class="footer-nav">
+          <div class="unit one-fifth">
+            <ul>
+              <li class="header">Company</li>
+              <li><a href="#">About 3D Hubs</a></li>
+              <li><a href="#">Work at 3D Hubs</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Terms / Privacy</a></li>
+            </ul>
+          </div>
+          <div class="unit one-fifth">
+            <ul>
+              <li class="header">Community</li>
+              <li><a href="#">Become a Hub</a></li>
+              <li><a href="#">How to run a Hub</a></li>
+              <li><a href="#">3D Printer Guide</a></li>
+              <li><a href="#">Talk forum</a></li>
+              <li><a href="#">Events</a></li>
+            </ul>
+          </div>
+          <div class="unit one-fifth">
+            <ul>
+              <li class="header">Top Cities</li>
+              <li><a href="#">New York</a></li>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Los Angeles</a></li>
+              <li><a href="#">Chicago</a></li>
+              <li><a href="#">Houston</a></li>
+            </ul>
+          </div>
+          <div class="unit one-fifth">
+            <ul>
+              <li class="header">Resources</li>
+              <li><a href="#">How 3D Hubs works</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">3D Printing trends</a></li>
+              <li><a href="#">Teleport API</a></li>
+            </ul>
+          </div>
+          <div class="unit one-fifth">
+            <ul>
+              <li class="header">Contact</li>
+              <li><a href="#">Customer Support</a></li>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Press enquiries</a></li>
+              <li><a href="#">General contact</a></li>
+              <li><a href="#">Submit ideas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        ©2016 3D Hubs Inc. – New York
+      </div>
+    </div><!-- .footer -->
+
   </div>
 
   <!-- Script files -->

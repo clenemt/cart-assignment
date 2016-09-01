@@ -9,7 +9,7 @@
     "watch": "run-p watch:*",
     "watch:css": "watch-run -p scss/** \"npm run build:css\"",
     "watch:js": "watch-run -p js/** \"npm run build:js\"",
-    "sync": "browser-sync start -s -f dist index.html --reload-delay 500 --no-ui",
+    "sync": "browser-sync start -s -f dist index.html --reload-delay 500 --no-ui --no-notify",
     "test": "eslint js/**"
   },
   "devDependencies": {

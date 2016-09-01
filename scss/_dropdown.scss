@@ -1,0 +1,28 @@
+.dropdown {
+  position: relative;
+
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: $zi-dropdown;
+  display: none;
+  min-width: 200px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .5em;
+  vertical-align: middle;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+}
