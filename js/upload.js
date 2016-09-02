@@ -32,7 +32,9 @@ var Upload = (function ($) { // eslint-disable-line
 
             // Handle file input removal
             $.emitter.on('input.remove', function () {
-                // TODO
+                // TODO: not possible to modify Files (read only)
+                // See http://stackoverflow.com/questions/19060378/how-to-remove-one-specific-selected-file-from-input-file-control
+                // Therefore don't try to add the same file twice ;)
             });
         }
     };

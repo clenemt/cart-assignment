@@ -5,6 +5,7 @@ var Cart = (function ($, Dialog) { // eslint-disable-line
     var id = 0,
         items = [];
 
+    /* Create DOM nodes for a new item */
     function buildItem (item) {
         return $.create(`<div id="${item.id}" class="cart-item">
             <img class="cart-img" src="img/preview.png">
@@ -30,7 +31,7 @@ var Cart = (function ($, Dialog) { // eslint-disable-line
         },
 
         _attachEvents () {
-            // A new cart item was added
+            // Handle the input add event
             $.emitter.on('input.add', (item) => {
                 this.add(item);
             });
@@ -86,6 +87,7 @@ var Cart = (function ($, Dialog) { // eslint-disable-line
                 $.remove(items[item].$el);
                 item = items.splice(item, 1)[0];
                 $.emitter.trigger('cart.remove', item, this.serialize());
+                $.emitter.trigger('input.remove', item);
             }
         },
 
